@@ -1,7 +1,8 @@
 body {
   margin: 0;
   text-align: center;
-  font-family: "Merriweather Sans", sans-serif;
+  /* font-family: "Merriweather Sans", sans-serif; */
+  font-family: "Montserrat", sans-serif;
 }
 
 h1 {
@@ -13,7 +14,7 @@ h1 {
 
 h2 {
   color: #64ccc5;
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   margin: 0 auto;
   font-family: "Montserrat", sans-serif;
 }
@@ -21,6 +22,7 @@ h2 {
 h3 {
   color: #98eecc;
   font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
 }
 
 p {
@@ -72,8 +74,7 @@ a {
 .about {
   margin: 0 auto;
   width: 50%;
-  height: 20rem;
-  /* background-color: cyan; */
+  height: 33rem;
 }
 
 .profile_photo {
@@ -84,14 +85,14 @@ a {
   text-align: left;
   line-height: 2;
   margin: 100px auto;
-  width: 50%;
+  width: 60%;
 }
 
 .java_img,
 .react_img {
   float: left;
   width: 25%;
-  margin-right: 30px;
+  margin-right: 60px;
 }
 
 .code_img {
