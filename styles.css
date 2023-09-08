@@ -29,11 +29,6 @@ p {
   font-weight: 700;
 }
 
-a {
-  text-decoration: none;
-  color: #1a5d1a;
-}
-
 /* banner  */
 
 .banner {
@@ -88,17 +83,23 @@ a {
   width: 60%;
 }
 
+.code_img {
+  float: right;
+  width: 45%;
+  margin: 6% 0 0 5%;
+}
+
+.node_img {
+  float: right;
+  width: 25%;
+  margin-left: 25px;
+}
+
 .java_img,
 .react_img {
   float: left;
   width: 25%;
   margin-right: 60px;
-}
-
-.code_img {
-  width: 45%;
-  float: right;
-  margin: 6% 0 0 5%;
 }
 
 /* footer  */
@@ -107,6 +108,18 @@ footer {
   padding-top: 6%;
   background-color: #c1ece4;
   height: 14rem;
+}
+
+footer a {
+  padding: 3px;
+  text-decoration: none;
+  color: #1a5d1a;
+}
+
+footer a:hover {
+  border-radius: 3px;
+  box-shadow: 2px 2px 5px 0px #bbdeb6;
+  background-color: #c1ece4;
 }
 
 li {
