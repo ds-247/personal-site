@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=McLaren&family=Rubik&display=swap');
+
+:root {
+  --bg-color: rgb(34 34 34);
+  --primary-color: #eee;
+  --secondary-color: #bbb;
+  --primary-font-size: 20px;
+  --secondary-font-size: 16px;
+  --tertiary-font-size: 12px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--bg-color);
+  /* font-family: 'McLaren', cursive; */
+  font-family: 'Rubik', sans-serif;
+}
+
+
+p,
+a {
+  color: var(--secondary-color);
+}
+
+.main {
+  padding: 0 48px;
+}
+
+.wrapper {
+  margin: 0 auto;
+  padding: 70px 0;
+  max-width: 30rem;
+  min-width: 370px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  max-width: 100%;
+}
+
+.col {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap: 10px;
+}
+
+/* me section  */
+
+section h2 {
+  font-size: var(--primary-font-size);
+  color: var(--primary-color);
+  /* font-family: 'Rubik', sans-serif; */
+  font-family: 'McLaren', cursive;
+}
+
+section p {
+  font-size: var(--secondary-font-size);
+}
+
+section a {
+  text-decoration: none;
+  font-size: var(--tertiary-font-size);
+  padding: 4px 11px;
+  border-radius: 9px;
+  background-color: #3d3b3b;
+}
+
+.descr {
+  flex-grow: 1;
+}
+
+/* temp  */
+
+/* .me-section {
+  border: 2px solid red;
+} */
+
+.main {
+  border: 2px solid white;
+}
+
+img {
+  width: 125px;
+  border-radius: 44px;
+  margin-right: 23px;
+}
