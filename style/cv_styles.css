@@ -1,12 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=McLaren&family=Rubik&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=McLaren&family=Rubik&display=swap");
 
 :root {
   --bg-color: rgb(34 34 34);
   --primary-color: #eee;
   --secondary-color: #bbb;
   --primary-font-size: 20px;
-  --secondary-font-size: 16px;
-  --tertiary-font-size: 12px;
+  --secondary-font-size: 15px;
+  --tertiary-font-size: 14px;
+  --quart-font-size: 11px;
 }
 
 * {
@@ -17,14 +18,25 @@
 
 body {
   background: var(--bg-color);
-  /* font-family: 'McLaren', cursive; */
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
 }
 
+h2,
+h3 {
+  color: var(--primary-color);
+}
 
 p,
 a {
   color: var(--secondary-color);
+}
+
+p {
+  font-size: var(--tertiary-font-size);
+}
+
+h3 {
+  font-size: var(--tertiary-font-size);
 }
 
 .main {
@@ -41,32 +53,39 @@ a {
 .row {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  max-width: 100%;
+  align-items: flex-start;
 }
 
 .col {
   display: grid;
   grid-template-columns: 1fr;
-  grid-row-gap: 10px;
+  /* grid-row-gap: 10px; */
+}
+
+section span {
+  color: var(--secondary-color);
+  font-size: var(--secondary-font-size);
+}
+
+section h3 {
+  margin-bottom: 30px;
 }
 
 /* me section  */
 
-section h2 {
+.dis {
+  margin-bottom: 17px;
+}
+
+section.me-section h2 {
   font-size: var(--primary-font-size);
-  color: var(--primary-color);
-  /* font-family: 'Rubik', sans-serif; */
-  font-family: 'McLaren', cursive;
+  font-family: "McLaren", cursive;
+  margin: 5px 0 10px 0;
 }
 
-section p {
-  font-size: var(--secondary-font-size);
-}
-
-section a {
+section.me-section a {
   text-decoration: none;
-  font-size: var(--tertiary-font-size);
+  font-size: var(--quart-font-size);
   padding: 4px 11px;
   border-radius: 9px;
   background-color: #3d3b3b;
@@ -76,18 +95,104 @@ section a {
   flex-grow: 1;
 }
 
-/* temp  */
+/* about section  */
 
-/* .me-section {
-  border: 2px solid red;
-} */
-
-.main {
-  border: 2px solid white;
+.about-section {
+  margin-top: 57px;
 }
 
-img {
-  width: 125px;
+.about h3 {
+  margin-bottom: 10px;
+}
+
+/* projects section  */
+
+.projects-section {
+  margin-top: 57px;
+}
+
+.projects-section div.date:after {
+  content: "0000 — 0000";
+  visibility: hidden;
+}
+
+section.projects-section a {
+  text-decoration: none;
+  font-size: var(--secondary-font-size);
+  color: var(--primary-color);
+}
+
+section.projects-section a:hover {
+  text-decoration: underline;
+}
+
+.up-right-arrow {
+  margin-bottom: 3px;
+  margin-left: 3px;
+}
+
+.project-img-container {
+  width: 180px;
+}
+
+.project-img {
+  width: 100%;
+  height: 109%;
+  border-radius: 6px;
+}
+
+.project-discription {
+  margin-bottom: 10px;
+}
+
+/* education section  */
+
+.edu-section {
+  margin-top: 70px;
+}
+
+section.edu-section a {
+  text-decoration: none;
+  font-size: var(--secondary-font-size);
+  color: var(--primary-color);
+}
+
+section.edu-section a:hover {
+  text-decoration: underline;
+}
+
+.edu-section div.date:after {
+  content: "0 — 0";
+  visibility: hidden;
+}
+
+/* contacts section  */
+
+.contacts-section {
+  margin-top: 57px;
+}
+
+.contacts-section div.contact:after {
+  content: "00 — 00";
+  visibility: hidden;
+}
+
+.link-email {
+  margin-right: 22px;
+}
+
+.link-github {
+  margin-right: 13px;
+}
+
+.contact-flex {
+  margin-bottom: 12px;
+}
+
+/* temp  */
+
+.profile_pic {
+  width: 107px;
   border-radius: 44px;
   margin-right: 23px;
 }
