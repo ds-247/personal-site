@@ -75,6 +75,10 @@ section h3 {
   border-top: 3px dotted #51515163;
 }
 
+.underline {
+  text-decoration: underline;
+}
+
 /* me section  */
 
 .dis {
@@ -115,8 +119,18 @@ section.me-section a {
   margin-top: 57px;
 }
 
-.projects-section div.date:after {
+.project1 div.date:after {
+  content: "000000 — 00000";
+  visibility: hidden;
+}
+
+.project2 div.date:after {
   content: "0000 — 0000";
+  visibility: hidden;
+}
+
+.project3 div.date:after {
+  content: "000000 — 0000000";
   visibility: hidden;
 }
 
