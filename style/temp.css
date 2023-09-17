@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=McLaren&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "McLaren", cursive;
+  box-sizing: border-box;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.spacious {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.divider {
+  margin: 50px auto;
+  width: 90px;
+  border-top: 12px dotted #dbe4e3;
+}
+
+.line {
+  border-top: 3px solid black;
+  width: 175px;
+  margin: 10px auto;
+}
+
+/* banner */
+header {
+  position: relative;
+  height: 52vw;
+}
+
+header:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 98%;
+  background-image: url("../assets/images/mountain.png"),
+    linear-gradient(180deg, red, yellow);
+  background-image: url("../assets/images/mountain.png"),
+    linear-gradient(180deg, #60f1e1, #ffffff);
+  background-size: 100vw auto;
+  background-repeat: no-repeat;
+  opacity: 0.9;
+  z-index: -1;
+}
+
+header .text {
+  text-align: center;
+  color: black;
+  padding: 9rem 0;
+  margin-left: 55px;
+}
+
+/* main  */
+
+/* about section  */
+.about {
+  text-align: center;
+}
+
+.about-image {
+  height: 140px;
+  margin-bottom: 12px;
+}
+
+.about-image img {
+  height: 100%;
+}
+
+.about div.discription {
+  width: 283px;
+  margin: 13px auto;
+}
+
+main section.about {
+  /* background-color: green; */
+  height: 38vw;
+}
+
+/* skills section  */
+
+.skills .title {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* main section.skills {
+  background-color: red;
+} */
+
+.side-box {
+  width: 70%;
+}
+
+.skills .box {
+  width: 60%;
+  margin: 48px auto;
+}
+
+.skills .box div.img {
+  width: 160px;
+}
+
+.skills .box img {
+  width: 100%;
+}
+
+.skills .box .heading {
+  text-align: start;
+  margin: 5px;
+}
+
+/* footer  */
+footer {
+  background-color: black;
+  height: 40vh;
+}
+
+/* temp  */
+.border {
+  border: 2px solid black;
+}
