@@ -3,115 +3,168 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@1,300&family=Montserrat:wght@200&family=Sacramento&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
+    <title>Dipanshu.xyz</title>
+    <link rel="stylesheet" href="./style/style.css" />
     <link rel="stylesheet" href="./style/responsive.css" />
-    <title>🇩🇮🇵🇦🇳🇸🇭🇺's 🇵🇪🇷🇸🇴🇳🇦🇱 🇸🇮🇹🇪</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
   </head>
   <body>
-    <div class="banner">
-      <h1>Hi. I'm Dipanshu.</h1>
-      <h2>a <span class="pro">Pro</span>grammer.</h2>
-      <img
-        class="mountain"
-        src="assets/images/mountain.png"
-        alt="background_image"
-      />
-    </div>
-
-    <hr class="section_divider" />
-
+    <header>
+      <div class="banner">
+        <div class="text col">
+          <div class="row-one row"><h1 class="sec-one">Hi. I'm </h1><span id="name">Dipanshu,</span></div>
+          <div class="row">
+            <h2 class="sec-three">a <span id="pro" class="underline">Pro</span></h2> <h2 class="sec-four">grammer.</h2>
+          
+        </div>
+      </div>
+    </header>
+    <div class="divider"></div>
     <main>
-      <div class="about">
-        <img
-          class="profile_photo"
-          src="assets/images/pic.png"
-          alt="profile_photo"
-        />
-        <h2>Hello.</h2>
-        <p>
-          I am a passionate and versatile programmer adept in Java, HTML, CSS,
-          JS, React, and Node, crafting innovative web solutions.
-        </p>
-      </div>
-      <hr class="section_divider" />
-      <div class="skills">
-        <h2>Skills</h2>
-        <hr class="underline" />
-        <div class="skill_row">
-          <img class="java_img" src="assets/images/java.png" alt="bg_image" />
-          <h3>Java</h3>
-          <p>
-            As a passionate Java programmer, with a solid understanding of Java
-            and Swing, I strive to deliver reliable and intuitive solutions.
-          </p>
+      <section class="about col">
+        <div class="container col">
+          <div class="about-image">
+            <img
+              class="profile_photo"
+              src="assets/images/avatar.jpeg"
+              alt="profile_photo"
+            />
+          </div>
+          <div class="greeting"><h2>Hello.</h2></div>
+          <div class="discription">
+            <p>
+              I'm a passionate tech enthusiast who thrives on learning new
+              skills and infusing them into projects.
+            </p>
+          </div>
         </div>
-        <div class="skill_row">
-          <img class="code_img" src="assets/images/code.png" alt="bg_image" />
-          <h3>Html CSS JS</h3>
-          <p>
-            Unleashing the power of HTML, CSS, and JavaScript to create
-            captivating web experiences.
-          </p>
-        </div>
-        <div class="skill_row">
-          <img class="react_img" src="assets/images/react.png" alt="bg_image" />
-          <h3>React</h3>
-          <p>
-            Creating dynamic web applications with React for a seamless and
-            engaging user experience.
-          </p>
-        </div>
-        <div class="skill_row">
-          <img
-            class="node_img"
-            src="assets/images/icons8-nodejs-480.png"
-            alt="bg_image"
-          />
-          <h3>Node</h3>
-          <p>
-            Utilizing Node.js and the Express framework to build web
-            applications that offer seamless functionality and a delightful user
-            experience.
-          </p>
-        </div>
-      </div>
-    </main>
+      </section>
 
-    <footer>
-      <div class="grid">
-        <div class="grid_left">
-          <div class="legal"><p>© 2023 Dipanshu Saini</p></div>
+      <div class="divider"></div>
+
+      <section class="skills col">
+        <div class="title">
+          <h2>My Tech Skills</h2>
+          <div class="line"></div>
         </div>
-        <ul class="grid_mid">
-          <li><p>Elsewhere</p></li>
-          <li>
-            <a href="https://github.com/ds-247" target="_blank">GitHub</a>
-          </li>
-          <li>
-            <a href="./pages/CV.html" target="_blank">CV</a>
-          </li>
-        </ul>
-        <ul class="grid_right">
-          <li><p>Contact</p></li>
-          <li>
-            <a href="mailto:dipanshusaini69@gmail.com"> Message </a>
-          </li>
-        </ul>
+        <div class="box row spacious">
+          <div class="img">
+            <img class="java_img" src="assets/images/java.png" alt="bg_image" />
+          </div>
+          <div class="side-box">
+            <div class="heading"><h3>Java</h3></div>
+            <div class="discr">
+              <p>
+                As a passionate Java programmer, with a solid understanding of
+                Java and Swing, I strive to deliver reliable and intuitive
+                solutions.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="box row spacious">
+          <div class="side-box">
+            <div class="heading">
+              <h3>Html CSS JS</h3>
+            </div>
+            <div class="discr">
+              <p>
+                Unleashing the power of HTML, CSS, and JavaScript to create
+                captivating web experiences.
+              </p>
+            </div>
+          </div>
+          <div class="img">
+            <img class="code_img" src="assets/images/code.png" alt="bg_image" />
+          </div>
+        </div>
+        <div class="box row spacious">
+          <div class="img">
+            <img
+              class="react_img"
+              src="assets/images/react.png"
+              alt="bg_image"
+            />
+          </div>
+          <div class="side-box">
+            <div class="heading">
+              <h3>React</h3>
+            </div>
+            <div class="discr">
+              <p>
+                Creating dynamic web applications with React for a seamless and
+                engaging user experience.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="box row spacious">
+          <div class="side-box">
+            <div class="heading">
+              <h3>Node</h3>
+            </div>
+            <div class="discr">
+              <p>
+                Utilizing Node.js and the Express framework to build web
+                applications that offer seamless functionality and a delightful
+                user experience.
+              </p>
+            </div>
+          </div>
+          <div class="img">
+            <img
+              class="node_img"
+              src="assets/images/icons8-nodejs-480.png"
+              alt="bg_image"
+            />
+          </div>
+        </div>
+        <div class="box row spacious">
+          <div class="img">
+            <img
+              class="java_img"
+              src="assets/images/mongo.png"
+              alt="bg_image"
+            />
+          </div>
+          <div class="side-box">
+            <div class="heading">
+              <h3>MongoDB</h3>
+            </div>
+            <div class="discr">
+              <p>
+                Applying MongoDB to develop efficient and scalable database
+                solutions, enhancing application performance and overall
+                functionality.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container row space-around">
+        <div class="copyright">
+          <p>&copy; 2023 Dipanshu Saini</p>
+        </div>
+        <div class="navigations">
+          <div class="box row space-around start">
+            <div class="col">
+              <li><p>Elsewhere</p></li>
+              <li>
+                <a href="https://github.com/ds-247" target="_blank">GitHub</a>
+              </li>
+              <li>
+                <a href="./pages/CV.html" target="_blank">CV</a>
+              </li>
+            </div>
+            <div class="col">
+              <li><p>Contact</p></li>
+              <li>
+                <a href="mailto:dipanshusaini69@gmail.com"> Message </a>
+              </li>
+            </div>
+          </div>
+        </div>
       </div>
     </footer>
   </body>

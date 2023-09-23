@@ -1,0 +1,265 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=McLaren&family=Neucha&family=Paytone+One&display=swap");
+
+:root {
+  --color-one: #61ffee;
+  /* --color-one: #69f0ca9e; */
+  --color-two: #289890;
+  --color-three: #80e2d7;
+  --color-four: #61ffee69;
+
+  --fontsize-one: 3rem;
+  --fontsize-two: 2.4rem;
+  --fontsize-three: 2rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "McLaren", cursive;
+  box-sizing: border-box;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.space-around {
+  justify-content: space-around;
+}
+
+.spacious {
+  justify-content: space-between;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.divider {
+  margin: 50px auto;
+  width: 90px;
+  border-top: 12px dotted #dbe4e3;
+}
+
+.line {
+  border-top: 3px solid black;
+  width: 238px;
+  margin: 10px auto;
+}
+
+li {
+  list-style: none;
+}
+
+p {
+  color: grey;
+}
+
+/* banner */
+
+header h1,
+h2 {
+  color: var(--color-two);
+}
+
+header h1 {
+  font-size: var(--fontsize-one);
+}
+
+header h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: var(--fontsize-two);
+}
+
+header div.row-one {
+  align-items: flex-end;
+}
+
+header h1.sec-one {
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+header #name {
+  font-size: 4rem;
+  text-shadow: 2px 2px 14px #05ff8a;
+  text-shadow: 2px 2px 20px #00b5ff;
+  color: white;
+}
+
+header span#pro {
+  text-shadow: 0px 0px 10px #ff3030;
+  color: white;
+  margin: 0 3px;
+  font-size: 42px;
+}
+
+header .text {
+  padding: 5rem 0;
+}
+
+header {
+  position: relative;
+  height: 52vw;
+}
+
+header:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 98%;
+  background-image: url("../assets/images/mountain.png"),
+    linear-gradient(180deg, var(--color-one), #ffffff);
+  background-size: 100vw auto;
+  background-repeat: no-repeat;
+  opacity: 0.9;
+  z-index: -1;
+}
+
+/* main  */
+
+/* about section  */
+.about h2 {
+  color: var(--color-two);
+  font-size: var(--fontsize-three);
+}
+
+.about {
+  text-align: center;
+}
+
+.about-image {
+  height: 240px;
+  margin-bottom: 12px;
+}
+
+.about-image img {
+  height: 100%;
+  border-radius: 100px;
+}
+
+.about div.discription {
+  width: 283px;
+  margin: 13px auto;
+}
+
+main section.about {
+  height: 38vw;
+}
+
+/* skills section  */
+
+.skills h2 {
+  color: var(--color-two);
+  font-size: var(--fontsize-three);
+}
+
+.skills h3 {
+  color: var(--color-three);
+  font-size: 25px;
+  margin-bottom: 30px;
+}
+
+.skills .title {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.side-box {
+  width: 70%;
+}
+
+.skills .box {
+  height: 300px;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.skills .box div.img {
+  width: 160px;
+}
+
+.skills .box img {
+  width: 100%;
+}
+
+.skills .box .java_img {
+  width: 90%;
+}
+
+.skills .box .code_img {
+  width: 170%;
+}
+
+.skills .box .node_img {
+  width: 130%;
+}
+
+.skills .box .react_img {
+  width: 100%;
+}
+
+.skills .box .heading {
+  text-align: start;
+  margin: 5px;
+}
+
+/* footer  */
+footer {
+  height: 380px;
+  margin-top: 120px;
+  display: flex;
+  align-items: flex-end;
+  background-color: var(--color-four);
+}
+
+footer p {
+  color: var(--color-two);
+  font-size: 16px;
+  font-weight: 900;
+}
+
+footer .container {
+  padding-bottom: 9%;
+  width: 100%;
+}
+
+footer .navigations {
+  width: 40%;
+}
+
+footer .start {
+  align-items: flex-start;
+}
+
+footer li {
+  margin: 0 10px;
+  padding: 10px;
+}
+
+footer li p {
+  margin-bottom: 5px;
+}
+
+footer li a {
+  color: #6daa90;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+footer li a:hover {
+  color: #3fa58c;
+  text-shadow: 0px 0px 2px #cccccc;
+  cursor: pointer;
+}
