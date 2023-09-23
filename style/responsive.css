@@ -1,9 +1,84 @@
-/* banner  */
+@media screen and (max-width: 1024px) {
+  /* banner  */
 
-@media screen and (max-width: 763px) {
+  body {
+    background-color: red;
+  }
 
-  /* header::before {
-    background-size: contain;
-  } */
+  header span#name {
+    font-size: 3rem;
+  }
+
+  header span#pro {
+    font-size: 28px;
+  }
+
+  header h1,
+  header h2 {
+    font-size: 30px;
+  }
 }
 
+@media screen and (max-width: 800px) {
+  body {
+    background-color: blue;
+  }
+
+  header span#name {
+    font-size: 30px;
+  }
+
+  header span#pro {
+    font-size: 20px;
+  }
+
+  header h1,
+  header h2 {
+    font-size: 22px;
+  }
+
+  header h1.sec-one {
+    margin-right: 10px;
+    margin-bottom: 5px;
+  }
+}
+
+@media screen and (max-width: 610px) {
+
+  /* banner  */
+
+  /* text  */
+
+  body {
+    background-color: cyan;
+  }
+
+  header span#name {
+    font-size: 17px;
+  }
+
+  header h1,
+  header h2,
+  header span#pro {
+    font-size: 13px;
+  }
+
+  header .text{
+    padding: 3rem;
+  }
+
+  /* banner photo  */
+
+  header {
+    height: 251px;
+    overflow: hidden;
+  }
+
+  header:before{
+    background-size: 101%;
+    left: -14%;
+    width: 117%;
+  }
+
+
+}
