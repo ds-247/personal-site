@@ -38,7 +38,7 @@
   }
 
   /* header  */
-  header::before {
+  /* header::before {
     content: "";
     position: absolute;
     top: 0;
@@ -52,13 +52,13 @@
     opacity: 0.3;
     z-index: 0;
     overflow: hidden;
-  }
+  } */
 
   header {
     padding-bottom: 36px;
     color: white;
     height: 500px;
-    width: 100vw;
+    /* width: 100vw; */
     border: 1px solid black;
     margin-bottom: 20px;
     background-color: var(--color-space);
@@ -159,7 +159,7 @@
   /* about  */
 
   .about {
-    width: 95vw;
+    width: 97%;
     border: 1px solid black;
     margin: 20px auto;
     border-radius: 20px;
@@ -196,11 +196,18 @@
   /* skills  */
 
   .skills {
-    width: 97vw;
+    width: 97%;
     border: 1px solid black;
     margin: 20px auto;
     border-radius: 20px;
     background-color: var(--color-yellow);
+    text-align: center;
+  }
+
+  .skills .title{
+    margin: 60px;
+    color: #ff8400;
+    font-size: 25px;
   }
 
   .skills .discr p {
@@ -254,7 +261,7 @@
   /* footer */
   footer {
     height: 400px;
-    width: 100vw;
+    /* width: 100vw; */
     border: 1px solid black;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
