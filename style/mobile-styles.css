@@ -1,0 +1,330 @@
+@import url("https://fonts.googleapis.com/css2?family=McLaren&family=Salsa&display=swap");
+
+:root {
+  --color-space: #17082f;
+  --color-purple: #9747ff;
+  --color-yellow: #f8ff95;
+  --color-green: #a6ff96;
+}
+
+@media screen and (max-width: 500px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "McLaren", cursive;
+  }
+
+  body {
+    background-color: #ffffff;
+    background-image: url("https://www.transparenttextures.com/patterns/worn-dots.png");
+  }
+
+  .row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .mcol {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  p {
+    color: #4d4d4d;
+  }
+
+  /* header  */
+  header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 73%;
+    background-image: url(../assets/images/4884785.jpg);
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    opacity: 0.3;
+    z-index: 0;
+    overflow: hidden;
+  }
+
+  header {
+    padding-bottom: 36px;
+    color: white;
+    height: 500px;
+    width: 100vw;
+    border: 1px solid black;
+    margin-bottom: 20px;
+    background-color: var(--color-space);
+    background-color: #1a0e1f;
+    background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+  }
+
+  header h1 {
+    font-size: 2.6rem;
+    color: #6ea7dc;
+  }
+
+  @media screen and (max-width: 450px) {
+    header h1 {
+      font-size: 1.9rem;
+    }
+  }
+
+  @media screen and (max-width: 398px) {
+    header h1 {
+      font-size: 1rem;
+    }
+  }
+
+  header h2 {
+    font-size: 2.3rem;
+    color: #6ea7dc;
+  }
+
+  header #name {
+    margin-left: 10px;
+    font-size: 3.5rem;
+    font-family: "Salsa", cursive;
+    color: #1dd692;
+  }
+
+  header #pro {
+    color: #ff7798;
+  }
+
+  header .sec-four {
+    margin-left: -12px;
+  }
+
+  /* icons  */
+  header .m-row-two::after {
+    content: "\ea1e";
+    font-family: "Material Symbols Rounded";
+    font-variation-settings: "FILL" 1, "wght" 700, "GRAD" -25, "opsz" 24;
+    font-size: 22px;
+    color: #ffb868;
+    position: relative;
+    bottom: 4px;
+    left: 16px;
+  }
+
+  header #name::before {
+    content: "\e92f";
+    font-family: "Material Symbols Rounded";
+    font-variation-settings: "FILL" 1, "wght" 700, "GRAD" -25, "opsz" 24;
+    font-size: 22px;
+    color: #1dd692;
+    position: relative;
+    bottom: 25px;
+  }
+
+  header #name::after {
+    content: "\e838";
+    font-family: "Material Symbols Rounded";
+    font-variation-settings: "FILL" 1, "wght" 700, "GRAD" -25, "opsz" 24;
+    font-size: 22px;
+    color: #1dd692;
+    position: relative;
+    bottom: 25px;
+    right: 10px;
+  }
+
+  header #pro::after {
+    content: "\e813";
+    font-family: "Material Symbols Rounded";
+    font-size: 20px;
+    color: #9747ff;
+    position: relative;
+    bottom: 21px;
+    right: 37px;
+  }
+
+  header .sec-four::after {
+    content: "\e1eb";
+    font-family: "Material Symbols Rounded";
+    font-size: 15px;
+    color: #9747ff;
+    position: relative;
+    top: 6px;
+    right: 3px;
+  }
+
+  /* about  */
+
+  .about {
+    width: 95vw;
+    border: 1px solid black;
+    margin: 20px auto;
+    border-radius: 20px;
+    background-color: var(--color-green);
+    padding: 10px;
+  }
+
+  .about .container {
+    width: 100%;
+    height: 100%;
+  }
+
+  .about .about-image,
+  .about .greeting,
+  .about .discription {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+  }
+
+  .about .about-image {
+    height: 242px;
+    margin: 49px 0px;
+  }
+
+  .about .profile_photo {
+    height: 100%;
+    border-radius: 54px;
+    border: 15px solid white;
+  }
+
+  /* skills  */
+
+  .skills {
+    width: 97vw;
+    border: 1px solid black;
+    margin: 20px auto;
+    border-radius: 20px;
+    background-color: var(--color-yellow);
+  }
+
+  .skills .discr p {
+    color: white;
+    font-weight: 500;
+  }
+
+  .skills .box {
+    height: 370px;
+    width: 90%;
+    margin: 40px auto;
+    background-color: #366ffe;
+    border-radius: 20px;
+    border: 11px solid white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+  }
+
+  .skills .box:nth-child(odd) {
+    flex-direction: column-reverse;
+  }
+
+  .skills .box:nth-child(even) {
+    flex-direction: column;
+  }
+
+  .skills .box .img {
+    width: 115px;
+    background-color: white;
+    border-radius: 100px;
+    padding: 20px;
+    box-shadow: 3px 5px 2px #505051;
+  }
+
+  .skills .box .side-box {
+    width: 280px;
+  }
+
+  .skills .box img {
+    width: 100%;
+  }
+
+  .skills .skill-two .img {
+    height: 105px;
+    width: 215px;
+    margin-top: 22px;
+  }
+
+  /* footer */
+  footer {
+    height: 400px;
+    width: 100vw;
+    border: 1px solid black;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    background-color: #9747ff;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  footer p {
+    /* color: var(--color-two); */
+    font-size: 16px;
+    font-weight: 900;
+  }
+
+  footer .container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  footer .copyright {
+    margin-bottom: 70px;
+  }
+
+  footer .navigations {
+    width: 100%;
+  }
+
+  footer .navigations .box {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+
+  /* footer .container {
+  padding-bottom: 9%; 
+  width: 100%;
+} */
+
+  /* footer .navigations {
+  width: 40%;
+} */
+
+  /* footer .start {
+  align-items: flex-start;
+} */
+
+  footer li {
+    margin: 0 10px;
+    padding: 10px;
+  }
+
+  footer li p {
+    margin-bottom: 5px;
+  }
+
+  footer li a {
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /* footer li a:hover {
+  color: #3fa58c;
+  text-shadow: 0px 0px 2px #cccccc;
+  cursor: pointer;
+} */
+}
