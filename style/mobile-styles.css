@@ -62,7 +62,7 @@
     top: 5%;
     margin: auto;
     height: 525px;
-    background-image: url(/assets/images/banner.png);
+    background-image: url("../assets/images/banner.png");
     background-size: contain;
     background-repeat: no-repeat;
     width: 340px;
