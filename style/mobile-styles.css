@@ -33,37 +33,39 @@
     justify-content: center;
   }
 
+  .line {
+    border-top: 2px solid blueviolet;
+    width: 90%;
+    margin: auto;
+  }
+
   p {
     color: #4d4d4d;
   }
 
   /* header  */
-  /* header::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 73%;
-    background-image: url(../assets/images/4884785.jpg);
-    background-size: cover;
-    background-position: center top;
-    background-repeat: no-repeat;
-    opacity: 0.3;
-    z-index: 0;
-    overflow: hidden;
-  } */
 
   header {
-    padding-bottom: 36px;
-    color: white;
     height: 500px;
-    /* width: 100vw; */
-    border: 1px solid black;
-    margin-bottom: 20px;
-    background-color: var(--color-space);
-    background-color: #1a0e1f;
-    background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+    background-color: #071952;
+    margin-bottom: 113px;
+  }
+
+  header .text {
+    display: none;
+  }
+
+  header .banner {
+    border-radius: 35px;
+    box-shadow: 0px 9px 20px 6px #200b5a;
+    position: relative;
+    top: 5%;
+    margin: auto;
+    height: 525px;
+    background-image: url(/assets/images/banner.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 340px;
   }
 
   header h1 {
@@ -156,11 +158,16 @@
     right: 3px;
   }
 
+  /* main  */
+  main {
+    margin-bottom: 90px;
+  }
+
   /* about  */
 
   .about {
     width: 97%;
-    border: 1px solid black;
+    box-shadow: 1px 1px 20px 7px #a6ff96;
     margin: 20px auto;
     border-radius: 20px;
     background-color: var(--color-green);
@@ -182,6 +189,10 @@
     margin: 20px;
   }
 
+  .about h2 {
+    color: #179a00;
+  }
+
   .about .about-image {
     height: 242px;
     margin: 49px 0px;
@@ -190,24 +201,37 @@
   .about .profile_photo {
     height: 100%;
     border-radius: 54px;
-    border: 15px solid white;
+    border: 3px solid white;
+    box-shadow: 3px 5px 14px 1px #1f5871;
   }
 
   /* skills  */
 
   .skills {
     width: 97%;
-    border: 1px solid black;
+    box-shadow: 1px 1px 20px 13px #f8ff95;
     margin: 20px auto;
     border-radius: 20px;
     background-color: var(--color-yellow);
     text-align: center;
   }
 
-  .skills .title{
+  .skills .title {
     margin: 60px;
     color: #ff8400;
     font-size: 25px;
+  }
+
+  @media screen and (max-width: 392px) {
+    .skills .title h2 {
+      font-size: 32px;
+    }
+  }
+
+  .skills h3 {
+    color: #3dfbdd;
+    margin: 20px;
+    font-size: 27px;
   }
 
   .skills .discr p {
@@ -221,11 +245,11 @@
     margin: 40px auto;
     background-color: #366ffe;
     border-radius: 20px;
-    border: 11px solid white;
     display: flex;
     justify-content: space-around;
     align-items: center;
     text-align: center;
+    box-shadow: 1px 2px 20px 2px #0041e5;
   }
 
   .skills .box:nth-child(odd) {
@@ -240,8 +264,8 @@
     width: 115px;
     background-color: white;
     border-radius: 100px;
-    padding: 20px;
-    box-shadow: 3px 5px 2px #505051;
+    padding: 15px;
+    box-shadow: 0px 3px 18px 4px #a9aec8;
   }
 
   .skills .box .side-box {
@@ -253,19 +277,24 @@
   }
 
   .skills .skill-two .img {
-    height: 105px;
-    width: 215px;
-    margin-top: 22px;
+    height: 100px;
+    width: 209px;
+    margin-top: 24px;
   }
 
   /* footer */
   footer {
     height: 400px;
-    /* width: 100vw; */
-    border: 1px solid black;
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
-    background-color: #9747ff;
+    background-color: #071952;
+    box-shadow: 0px 0px 20px 11px #071952;
+    padding: 0 40px;
+  }
+
+  footer .copy {
+    font-size: 39px;
+    font-weight: 100;
+    position: relative;
+    top: 8px;
   }
 
   li {
@@ -273,7 +302,7 @@
   }
 
   footer p {
-    /* color: var(--color-two); */
+    color: #9f9f9f;
     font-size: 16px;
     font-weight: 900;
   }
@@ -301,19 +330,6 @@
     align-items: flex-start;
   }
 
-  /* footer .container {
-  padding-bottom: 9%; 
-  width: 100%;
-} */
-
-  /* footer .navigations {
-  width: 40%;
-} */
-
-  /* footer .start {
-  align-items: flex-start;
-} */
-
   footer li {
     margin: 0 10px;
     padding: 10px;
@@ -324,14 +340,14 @@
   }
 
   footer li a {
-    color: #ffffff;
+    color: #748ad1;
     text-decoration: none;
     cursor: pointer;
   }
 
-  /* footer li a:hover {
-  color: #3fa58c;
-  text-shadow: 0px 0px 2px #cccccc;
-  cursor: pointer;
-} */
+  footer li a:hover {
+    color: #3fa58c;
+    text-shadow: 0px 0px 2px #cccccc;
+    cursor: pointer;
+  }
 }
