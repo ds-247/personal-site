@@ -139,6 +139,11 @@ section.me-section a {
   visibility: hidden;
 }
 
+.project5 div.date:after {
+  content: "0000 — 000";
+  visibility: hidden;
+}
+
 section.projects-section a {
   text-decoration: none;
   font-size: var(--secondary-font-size);
